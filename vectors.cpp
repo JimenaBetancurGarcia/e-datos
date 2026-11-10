@@ -90,6 +90,9 @@ class Vec {
         }
 
         void replace(size_t i, T element){
+            if (i >= count) {
+                return;
+            }
             data[i] = element;
         }
 
@@ -361,9 +364,9 @@ void prueba_replace() {
     Vec<int> v;
     v.push_back(10); v.push_back(20); v.push_back(30); v.push_back(20);
     
-    v.replace(20, 99);
+    v.replace(2, 99);
     mostrar(v);                     
-    v.replace(55, 0);               
+    v.replace(5, 100);               
     mostrar(v);                     
 }
  
