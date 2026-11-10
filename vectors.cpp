@@ -111,7 +111,7 @@ class Vec {
             count = 0;
         }
 
-        bool contains(T& element) const { return find(e) != -1; }
+        bool contains(T& element) const { return find(element) != -1; }
 
         int find(T element){
             for (size_t j = 0; j < count; ++j) {
